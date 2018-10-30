@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- 无关紧要 -->
+    <title>第一个单页面vue例子：</title>
+</head>
+<body>
+    <div id="hanbuhe_one">
+      <ul>
+        <li v-for="han in hanbuhe"> {{han.dsd}} {{han.name}} {{han.ndsdsdame}} {{han.han}}</li>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.min.js" ></script>
+    <script>
+      new Vue({
+        el:'#hanbuhe_one',
+        data:{
+          hanbuhe:[
+            {name: 'hanbuhe'},
+            {dsd: '13'},
+            {ndsdsdame: 'saihanqu'}
+          ]
+        }
+      });
+    </script>
+</body>
+</html>

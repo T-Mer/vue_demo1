@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vue_demo1</title>
+  </head>
+  <body>
+    <!-- built files will be auto injected -->
+    <div id="app">
+        <ul>
+          <li v-for="book in books"> {{book.name}}</li>
+        </ul>
+      <input  type="text" v-model="name" id="name" placeholder="你的名字"/>
+      <h1></h1>
+    </div>
+     <script src="https://unpkg.com/vue/dist/vue.min.js" ></script>
+          <script>
+            new Vue({
+              el:'#app',
+              data:{
+                books:[
+                  {name:"1"},
+                  {name:"2"},
+                  {name:"3"},
+                  {name:"4"}
+                ]
+              }
+            });
+          </script>
+  </body>
+
+
+</html>
